@@ -6,4 +6,11 @@ public class Wheel {
     public Wheel(double diameter) {
         this.diameter = diameter;
     }
+
+    @Override
+    public String toString() {
+        return "Wheel{" +
+                "diameter=" + diameter +
+                '}';
+    }
 }

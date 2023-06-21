@@ -8,4 +8,12 @@ public class Engine {
         this.volume = volume;
         this.fuelType = fuelType;
     }
+
+    @Override
+    public String toString() {
+        return "Engine{" +
+                "volume=" + volume +
+                ", fuelType='" + fuelType + '\'' +
+                '}';
+    }
 }

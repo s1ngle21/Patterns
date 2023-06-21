@@ -40,7 +40,7 @@ public class CarBuilder implements Builder {
     public void setColor(String string) {
         this.string = string;
     }
-    public Car getResultCar() {
+    public Car buildCar() {
         return new Car(carType, brand, wheels, transmission, string, engine);
     }
 }

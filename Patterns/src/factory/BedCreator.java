@@ -5,7 +5,7 @@ import factory.impl.Furniture;
 
 public class BedCreator extends FurnitureCreator{
     @Override
-    public Furniture createFurnitureObj() {
+    public Furniture create() {
         return new Bed();
     }
 }

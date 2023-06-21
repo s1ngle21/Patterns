@@ -6,7 +6,7 @@ import factory.impl.Table;
 public class TableCreator extends FurnitureCreator {
 
     @Override
-    public Furniture createFurnitureObj() {
+    public Furniture create() {
         return new Table();
     }
 }

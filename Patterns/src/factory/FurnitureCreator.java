@@ -5,8 +5,7 @@ import factory.impl.Furniture;
 public abstract class FurnitureCreator {
 
     public void createFurniture() {
-        Furniture furniture = createFurnitureObj();
-        furniture.create();
+        Furniture furniture = create();
     }
-    public abstract Furniture createFurnitureObj();
+    protected abstract Furniture create();
 }

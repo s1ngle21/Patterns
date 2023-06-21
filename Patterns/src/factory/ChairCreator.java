@@ -6,7 +6,7 @@ import factory.impl.Furniture;
 public class ChairCreator extends FurnitureCreator {
 
     @Override
-    public Furniture createFurnitureObj() {
+    public Furniture create() {
         return new Chair();
     }
 }

@@ -2,6 +2,8 @@ package builder;
 
 import builder.carFeatures.*;
 
+import java.util.Objects;
+
 public class Car {
     private final CarType carType;
     private final Brand brand;
@@ -53,5 +55,18 @@ public class Car {
                 ", color ='" + color + '\'' +
                 ", engine=" + engine +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Car car = (Car) o;
+        return carType == car.carType && brand == car.brand && Objects.equals(wheels, car.wheels) && transmission == car.transmission && Objects.equals(color, car.color) && Objects.equals(engine, car.engine);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(carType, brand, wheels, transmission, color, engine);
     }
 }
